@@ -1,0 +1,78 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    margin: 0;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.left-side {
+    flex-direction: column;
+    margin: 3rem 12rem 1rem 12rem;
+}
+.left {
+    justify-content: center;
+    width: 32rem;
+}
+.left p {
+    color: hsl(0, 93%, 68%);
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.title {
+    padding-top: 5rem;
+    font-weight: 600;
+    font-size: 100px;
+    letter-spacing: 1.5rem;
+}
+.title span {
+    color: hsl(0, 93%, 68%);
+    font-weight: 300;
+}
+.right img {
+    height: 100vh;
+}
+.input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    border-style: solid !important;
+    border-color: hsl(0, 36%, 70%) !important;
+    border-width: 1px;
+    border-radius: 25px;
+    width: 20rem;
+    height: 3rem;
+}
+.email {
+    padding-left: 1rem;
+    border: hidden;
+    border-radius: 25px;
+    height: 2.9rem;
+    width: 13rem;
+}
+.email:focus{
+    outline: none;
+}
+.button {
+    background-color: hsl(0, 93%, 68%);
+    height: 3rem;
+    width: 4rem;
+    border-radius: 25px;
+    border: hidden;
+    cursor: pointer;
+}
+.errorimg {
+    margin-right: 1rem;
+}
+@media only screen and (max-width: 600px){
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .right img {
+        height: 10rem;
+    }
+    .left-side {
+        margin: 1rem;
+    }
+}
